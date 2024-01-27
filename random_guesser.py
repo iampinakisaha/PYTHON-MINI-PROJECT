@@ -5,14 +5,17 @@ import random
 #generating a random number
 random_number =random.randint(1,100)
 
+#defining chances
+chance = 10 
 
-chance = 10
-flag = False
+#setting flag = False as initial
+flag = False 
 while (flag != True):
     if (chance == 0):
         print("You have exhausted all your chances.")
         break
     guess = int(input("guess the number between 1 to 100: "))
+
 
     if (guess > 100 or guess < 1):
         print(f"Your choosen number {guess} not between 1 or 100.")
